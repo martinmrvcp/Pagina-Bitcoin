@@ -1,0 +1,68 @@
+$primary:#e93a00;
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+section{
+    padding: 60px 0px;
+}
+
+.banner{
+    background: url("../imagenes/fondoboostrap.png");
+    background-size: cover;
+    background-position: top left;
+}
+.btn-primary{
+    color: white;
+    font-weight: bolder;
+   
+}
+.banner-content > h1{
+    font-size: 90px;
+    font-weight: normal;
+    margin-bottom: 2em;
+}
+.banner-content > h2{
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 2em;
+}
+// .d-block {
+//     width: 500px;
+//     height: 350px;
+// }
+
+@include media-breakpoint-only(xs){
+    .banner-content > h1{
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .banner-content > h2{
+        font-size: 35px;
+    }
+}
+@include media-breakpoint-only(sd){
+    .banner-content > h1{
+        font-size: 80px;
+        line-height: 80px;
+    }
+    .banner-content > h2{
+        font-size: 40px;
+    }
+}
+@include media-breakpoint-only(md){
+    .banner-content > h1{
+        font-size: 90px;
+        line-height: 100px;
+    }
+    .banner-content > h2{
+        font-size: 40px;
+    }
+}
+@include media-breakpoint-only(lg){
+    .banner-content > h1{
+        font-size: 70px;
+        line-height: 85px;
+    }
+    .banner-content > h2{
+        font-size: 40px;
+    }
+}
